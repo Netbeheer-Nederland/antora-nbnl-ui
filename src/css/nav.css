@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 1024px) {
   .nav-container {
-    font-size: calc(15.5 / var(--rem-base) * 1rem);
+    font-size: var(--nav-font-size);
     flex: none;
     position: static;
     top: 0;
@@ -124,6 +124,7 @@
 
 .nav-menu h3.title {
   color: var(--nav-heading-font-color);
+  font-family: Poppins, sans-serif;
   font-size: var(--nav-heading-font-size);
   font-weight: var(--body-font-weight-bold);
   margin: 0;
@@ -287,4 +288,14 @@
   color: var(--nav-background);
   font-weight: var(--body-font-weight-bold);
   opacity: 1;
+}
+
+/* Additions */
+
+/* If nav blocks have a class `truncate` assigned to them, truncate items. */
+.truncate {
+  max-width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

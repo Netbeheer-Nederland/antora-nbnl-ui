@@ -57,6 +57,10 @@
   .toc .toc-menu ul {
     font-size: calc(13.5 / var(--rem-base) * 1rem);
   }
+
+  .toc .toc-menu li {
+    white-space: nowrap;  /* Somehow prevents wrapping at all... Not sure if this is desired. */
+  }
 }
 
 .toc .toc-menu li {
