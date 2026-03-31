@@ -124,7 +124,7 @@
 
 .nav-menu h3.title {
   color: var(--nav-heading-font-color);
-  font-size: var(--nav-heading-font-size);;
+  font-size: var(--nav-heading-font-size);
   font-weight: var(--body-font-weight-bold);
   margin: 0;
   padding: 0.25em 0 0.125em;
@@ -230,7 +230,7 @@
   line-height: var(--nav-line-height);
   flex-grow: 1;
   box-shadow: inset 0 1px 5px var(--nav-panel-divider-color);
-  background: var(--nav-secondary-background);
+  background: var(--nav-background);
   padding: 0.75rem 0.75rem 0 0.75rem;
   margin: 0;
   overflow-y: scroll;
@@ -284,7 +284,7 @@
 
 .nav-panel-explore .component .is-current a {
   background: var(--nav-heading-font-color);
-  color: var(--nav-secondary-background);
+  color: var(--nav-background);
   font-weight: var(--body-font-weight-bold);
   opacity: 1;
 }
