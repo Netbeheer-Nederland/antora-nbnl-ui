@@ -24,6 +24,7 @@
 .doc h4,
 .doc h5,
 .doc h6 {
+  font-family: var(--heading-font-family);
   color: var(--heading-font-color);
   font-weight: var(--heading-font-weight);
   hyphens: none;

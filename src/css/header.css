@@ -17,6 +17,7 @@ body {
   top: 0;
   width: 100%;
   z-index: var(--z-index-navbar);
+  border-bottom: var(--color-nbnl-dark-gray) solid 1px;
 }
 
 .navbar a {
@@ -39,11 +40,17 @@ body {
   font-size: calc(22 / var(--rem-base) * 1rem);
   flex-wrap: wrap;
   line-height: 1;
+  width: var(--nav-width);  /* TODO: Make `.navbar-item.search` have `justify-content: flex-start`. */
 }
 
 .navbar-brand .navbar-item:first-child a {
   color: inherit;
   word-wrap: normal;
+}
+
+.navbar-brand .navbar-item:first-child #site-logo {
+  width: auto;
+  height: 43px;
 }
 
 .navbar-brand .navbar-item:first-child :not(:last-child) {
