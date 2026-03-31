@@ -81,17 +81,6 @@
   opacity: 0.75;
 }
 
-.nav-panel-menu:not(.is-active)::after {
-  content: "";
-  background: rgba(0, 0, 0, 0.5);
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .nav-menu {
   min-height: 100%;
   padding: 0.5rem 0.75rem;
@@ -186,11 +175,6 @@
   background: var(--nav-background);
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .nav-panel-explore:not(:first-child) {
