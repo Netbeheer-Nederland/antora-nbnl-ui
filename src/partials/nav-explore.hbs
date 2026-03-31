@@ -1,8 +1,8 @@
 <div class="nav-panel-explore" data-panel="explore">
   {{#if page.component}}
   <div class="context">
-    <span class="title">{{page.component.title}}</span>
-    <span class="version">{{#if (or page.componentVersion.version (ne page.componentVersion.displayVersion 'default'))}}{{page.componentVersion.displayVersion}}{{/if}}</span>
+    <strong class="title">{{page.component.title}}</strong>
+    <div class="version">{{#if (or page.componentVersion.version (ne page.componentVersion.displayVersion 'default'))}}{{page.componentVersion.displayVersion}}{{/if}}</div>
   </div>
   {{/if}}
   <ul class="components">

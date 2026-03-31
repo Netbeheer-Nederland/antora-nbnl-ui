@@ -189,18 +189,24 @@
   box-shadow: 0 -1px 0 var(--nav-panel-divider-color);
   padding: 0 0.5rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: space-between;
   line-height: 1;
-  height: var(--drawer-height);
+  /*height: var(--drawer-height);*/
 }
 
 .nav-panel-explore:not(:first-child) .context {
   cursor: pointer;
 }
 
+.nav-panel-explore .context .title {
+  padding-left: 0.75rem;
+}
+
 .nav-panel-explore .context .version {
   display: flex;
+  padding-left: 0.75rem;
   align-items: inherit;
 }
 
