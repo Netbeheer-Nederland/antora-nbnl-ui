@@ -1085,3 +1085,11 @@
   text-align: right;
   width: 1.5em;
 }
+
+/* NBNL additions */
+
+@media screen and (min-width: 1024px) {
+  .doc .table-container {
+    overflow-x: auto;
+  }
+}
