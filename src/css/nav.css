@@ -12,6 +12,7 @@
   font-size: calc(17 / var(--rem-base) * 1rem);
   z-index: var(--z-index-nav);
   visibility: hidden;
+  border-right: var(--color-nbnl-dark-gray) 1px solid;
 }
 
 @media screen and (min-width: 769px) {
@@ -123,7 +124,7 @@
 
 .nav-menu h3.title {
   color: var(--nav-heading-font-color);
-  font-size: inherit;
+  font-size: var(--nav-heading-font-size);;
   font-weight: var(--body-font-weight-bold);
   margin: 0;
   padding: 0.25em 0 0.125em;
