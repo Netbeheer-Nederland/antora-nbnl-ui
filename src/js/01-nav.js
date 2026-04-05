@@ -52,7 +52,7 @@
   }
 
   if (explorePanel) {
-    explorePanel.querySelector('.context').addEventListener('click', function () {
+    explorePanel.querySelector('.context .version').addEventListener('click', function () {
       // NOTE logic assumes there are only two panels
       find(nav, '[data-panel]').forEach(function (panel) {
         panel.classList.toggle('is-active')
