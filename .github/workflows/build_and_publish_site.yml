@@ -14,21 +14,22 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: node:24
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
       - name: Install dependencies
         run: npm i
       - name: Build UI bundle
         run: npx gulp bundle
       - name: Prepare release
-        run: echo "" > release_notes.txt
+        run: echo ${{ github.sha }} > release_notes.txt
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           body_path: release_notes.txt
           tag_name: ${{ env.GITHUB_REF_NAME }}
-          files: |
-            build/ui-bundle.zip
+          files: build/ui-bundle.zip
