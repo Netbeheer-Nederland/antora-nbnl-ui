@@ -1095,3 +1095,8 @@
     overflow-x: auto;
   }
 }
+
+.class-diagram img {
+  max-height: 33vh;
+  color-scheme: light;
+}
