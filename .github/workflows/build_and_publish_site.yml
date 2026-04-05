@@ -23,8 +23,6 @@ jobs:
         run: npm i
       - name: Build UI bundle
         run: npx gulp bundle
-      - name: Generate site
-        run: just build
       - name: Prepare release
         run: echo "" > release_notes.txt
       - name: Release
