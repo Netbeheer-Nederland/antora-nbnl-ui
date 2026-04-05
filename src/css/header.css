@@ -65,7 +65,7 @@ body {
 #search-input {
   color: #333;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   width: 150px;
   border: 1px solid #dbdbdb;
   border-radius: 0.1em;
@@ -86,6 +86,11 @@ body {
 
 #search-input:focus {
   outline: none;
+}
+
+/* Hide "search in project" filter */
+#search-field > label.filter {
+  display: none;
 }
 
 .navbar-burger {

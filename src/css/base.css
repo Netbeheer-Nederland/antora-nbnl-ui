@@ -152,3 +152,7 @@ object[type="image/svg+xml"]:not([width]) {
     background-color: var(--scrollbar_hover-thumb-color);
   }
 }
+
+.doc code {
+  padding: 0;
+}

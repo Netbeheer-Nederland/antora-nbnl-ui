@@ -1,8 +1,10 @@
-<div class="nav-container"{{#if page.component}} data-component="{{page.component.name}}" data-version="{{page.version}}"{{/if}}>
+<div class="nav-container"{{#if page.component}} data-component="{{page.component.name}}" data-version="{{page.version}}"{{/if}}{{#if (eq site.ui.defaultLayout "single-page")}} style="border-right: unset"{{/if}}>
+  {{#unless (eq site.ui.defaultLayout "single-page")}}
   <aside class="nav">
     <div class="panels">
 {{> nav-explore}}
 {{> nav-menu}}
     </div>
   </aside>
+  {{/unless}}
 </div>
