@@ -54,7 +54,7 @@ body {
 }
 
 .navbar-brand .navbar-item:first-child:hover {
-  background-color: #e9f1f5
+  background-color: #e9f1f5;
 }
 
 .navbar-brand .navbar-item:first-child :not(:last-child) {
