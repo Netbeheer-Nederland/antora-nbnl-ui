@@ -27,7 +27,6 @@ body {
 .navbar-brand {
   display: flex;
   flex: auto;
-  padding-left: 1rem;
 }
 
 .navbar-brand .navbar-item {
@@ -36,11 +35,12 @@ body {
 
 .navbar-brand .navbar-item:first-child {
   align-self: center;
-  padding: 0;
+  margin-left: 1rem;
+  padding: 0.5rem calc(17px + 1rem) 0.5rem 0;
   font-size: calc(22 / var(--rem-base) * 1rem);
   flex-wrap: wrap;
   line-height: 1;
-  width: var(--nav-width);  /* TODO: Make `.navbar-item.search` have `justify-content: flex-start`. */
+  width: calc(var(--nav-width) - 18px);  /* TODO: Make `.navbar-item.search` have `justify-content: flex-start`. */
 }
 
 .navbar-brand .navbar-item:first-child a {
@@ -51,6 +51,10 @@ body {
 .navbar-brand .navbar-item:first-child #site-logo {
   width: auto;
   height: 43px;
+}
+
+.navbar-brand .navbar-item:first-child:hover {
+  background-color: #e9f1f5
 }
 
 .navbar-brand .navbar-item:first-child :not(:last-child) {
