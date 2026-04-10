@@ -1,7 +1,7 @@
 <div class="nav-panel-explore" data-panel="explore">
   {{#if page.component}}
   <div class="context">
-	  <h3 class="title"><a href="{{{relativize ./url}}}">{{{page.component.title}}}</a></h3>
+    <h3 class="title"><a href="{{{relativize ./url}}}">{{{page.component.title}}}</a></h3>
     <div class="version">{{#if (or page.componentVersion.version (ne page.componentVersion.displayVersion 'default'))}}{{page.componentVersion.displayVersion}}{{/if}}</div>
   </div>
   {{/if}}
