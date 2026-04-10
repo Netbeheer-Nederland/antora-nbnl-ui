@@ -57,8 +57,8 @@
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.15;
   --nav-heading-font-color: var(--color-jet-30);
-  --nav-heading-font-size: 1rem;
-  --nav-font-size: 0.75rem;
+  --nav-font-size: 0.8rem;
+  --nav-heading-font-size: calc(var(--nav-font-size) * 1.1);
   --nav-muted-color: var(--color-gray-70);
   --nav-panel-divider-color: var(--color-smoke-90);
   /* toolbar */
