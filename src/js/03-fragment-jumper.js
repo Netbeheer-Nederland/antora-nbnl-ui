@@ -1,10 +1,9 @@
-/*
 ;(function () {
   'use strict'
 
   var article = document.querySelector('article.doc')
   if (!article) return
-  var toolbar = document.querySelector('.toolbar')
+  var navbar = document.querySelector('nav')
   var supportsScrollToOptions = 'scrollTo' in document.documentElement
 
   function decodeFragment (hash) {
@@ -21,7 +20,7 @@
       window.location.hash = '#' + this.id
       e.preventDefault()
     }
-    var y = computePosition(this, 0) - toolbar.getBoundingClientRect().bottom
+    var y = computePosition(this, 0) - navbar.getBoundingClientRect().bottom
     var instant = e === false && supportsScrollToOptions
     instant ? window.scrollTo({ left: 0, top: y, behavior: 'instant' }) : window.scrollTo(0, y)
   }
@@ -42,4 +41,3 @@
     }
   })
 })()
-*/
