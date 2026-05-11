@@ -6,6 +6,7 @@ Author Name
 :!table-caption:
 //:page-role: -toc
 :page-pagination:
+:page-stem:
 :description: A "preview" site for the UI.
 
 [.float-group]
@@ -23,6 +24,11 @@ Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 https://example.org[Curabitur,role=unresolved] ut massa aliquam, cursus enim et, accumsan lectus.
 Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna.
+
+== Math
+
+When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
 
 == Cu solet
 
